@@ -1,0 +1,22 @@
+@import "./variables";
+
+@mixin lg {
+    @media ( max-width: #{$extra_large}){
+        @content;
+    }        
+}
+@mixin destop {
+    @media ( max-width: #{$large}){
+        @content;
+    }        
+}
+@mixin tablet {
+    @media ( max-width: #{$medium}){
+        @content;
+    }        
+}
+@mixin mobile {
+    @media ( max-width: #{$small}){
+        @content;
+    }        
+}
